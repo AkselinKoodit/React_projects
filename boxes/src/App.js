@@ -1,4 +1,6 @@
 import "./App.css";
+import Header from "./Header.js";
+import Footer from "./Footer";
 
 const Box = (props) => {
   return (
@@ -13,9 +15,7 @@ const Box = (props) => {
 function App() {
   return (
     <div>
-      <header>
-        <h1>Logo</h1>
-      </header>
+      <Header />
       <main>
         <Box name="Sakarius Topelius" age="123" title="kirjailija" />
         <Box name="Akseli Miettinen" age="65" title="Suurmestari" />
@@ -26,9 +26,7 @@ function App() {
           <p>Title: Dr.</p>
         </div>
       </main>
-      <footer>
-        <p>Copyright</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
