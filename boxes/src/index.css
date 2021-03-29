@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(248, 235, 210);
+  background-image: radial-gradient(burlywood, rgb(248, 235, 210));
+  background-image: linear-gradient(burlywood, rgb(248, 235, 210));
 }
 
 code {
