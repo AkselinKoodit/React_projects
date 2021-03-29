@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 2;
+}
+.circle {
+  margin: auto;
+  border-radius: 50%;
+  background-color: #bada55;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin: 20px;
+  padding: 10px;
+}
+.even {
+  background-color: gray;
+}
+.odd {
+  background-color: lightslategray;
+}
+body {
+  text-align: center;
+}
+.Header {
+  margin-top: 20vh;
+}
