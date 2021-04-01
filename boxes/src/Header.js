@@ -2,9 +2,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav>
-      <h1>This is what function component template looks like.</h1>
-    </nav>
+    <header>
+      <div>
+        <h1>LOGO</h1>
+      </div>
+    </header>
   );
 };
 
