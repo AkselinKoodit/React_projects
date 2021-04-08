@@ -16,24 +16,29 @@ h1 {
 
 button {
   border-radius: 5px;
-  padding: 1rem;
-  background-image: linear-gradient(
-    to right,
+  padding: 1.5rem;
+  background-image: radial-gradient(
     rgba(228, 226, 226, 0.616),
-    rgb(146, 143, 143)
+    rgb(185, 180, 180)
   );
   cursor: pointer;
-  margin: 1rem;
+  margin: 2rem;
   font-family: "Train One", cursive;
 }
 button:hover {
   box-shadow: 0 0 50px #bada55;
-  font-size: 17px;
-  transition-duration: 0.3s;
+  -webkit-transform: scale(1.2);
+  border-radius: 10px 100px 100px 100px;
+  transition-duration: 0.5s;
 }
 .circles {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 4rem;
+}
+.controls {
+  margin: 2rem;
+}
+#score {
+  margin: 2rem;
 }

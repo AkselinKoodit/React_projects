@@ -10,6 +10,11 @@
   border: solid 2px rgb(48, 48, 48);
   cursor: pointer;
 }
+.circle:hover {
+  font-size: 1.1rem;
+  border: solid 4px rgb(48, 48, 48);
+  font-weight: bold;
+}
 .green {
   background-color: green;
 }
