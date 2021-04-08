@@ -1,15 +1,15 @@
-import "./App.css";
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
-import Main_router from "./Main_router";
 import { BrowserRouter as Router } from "react-router-dom";
+
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
 
 const App = () => {
   return (
     <Router>
       <Header />
-      <Main_router />
+      <Main />
       <Footer />
     </Router>
   );
