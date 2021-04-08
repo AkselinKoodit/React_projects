@@ -1,0 +1,24 @@
+.circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin: 5px;
+  border: solid 2px rgb(48, 48, 48);
+  cursor: pointer;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+.orange {
+  background-color: orange;
+}
+.blue {
+  background-color: blue;
+}

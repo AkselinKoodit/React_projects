@@ -1,38 +1,39 @@
-.App {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+
+body {
+  font-family: "Train One", cursive;
+  background-color: peachpuff;
   text-align: center;
+  line-height: 1.6;
+}
+h1 {
+  margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border-radius: 5px;
+  padding: 1rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(228, 226, 226, 0.616),
+    rgb(146, 143, 143)
+  );
+  cursor: pointer;
+  margin: 1rem;
+  font-family: "Train One", cursive;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  box-shadow: 0 0 50px #bada55;
+  font-size: 17px;
+  transition-duration: 0.3s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.circles {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-bottom: 4rem;
 }
