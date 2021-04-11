@@ -3,10 +3,19 @@ import Circle from "./components/Circle";
 
 import "./App.css";
 
-let scores = 0;
-
 class App extends Component {
   state = {
+    show: true,
+  };
+  clickHandler = () => {
+    console.log("clicked a circle ");
+    console.log(`your score is ${this.state.score}`);
+    this.setState({
+      score: this.state.score + 1,
+    });
+  };
+  state = {
+    score: 0,
     circles: [
       { id: 1, color: "green" },
       { id: 2, color: "brown" },
@@ -14,30 +23,18 @@ class App extends Component {
       { id: 4, color: "blue" },
     ],
   };
-  clickHandler = (circle) => {
-    scores++;
-    console.log(`You clicked ${circle} and you score is ${scores}`);
 
-    document.getElementsByClassName("score").dangerouslySetInnerHTML = {
-      _html: `You clicked ${circle} and you score is ${scores}`,
-    };
-  };
   render() {
     const circlesList = this.state.circles.map((circle) => {
-      return (
-        <Circle
-          id={circle.id}
-          key={circle.id}
-          color={circle.color}
-          clickMe={this.clickHandler.bind(this, circle.color)}
-        />
-      );
+      return <Circle id={circle.id} key={circle.id} color={circle.color} />;
     });
     return (
       <div>
         <h1>Speedtest</h1>
-        <p className="score">Score: </p>
-        <div className="circles">{circlesList}</div>
+        <p>Your score: {this.state.score}</p>
+        <div className="circles" onClick={this.clickHandler}>
+          {circlesList}
+        </div>
         <div className="controls">
           <button>Start</button>
           <button>Stop</button>

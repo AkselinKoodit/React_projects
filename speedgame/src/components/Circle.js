@@ -3,7 +3,7 @@ import "./Circle.css";
 
 const Circle = (props) => {
   return (
-    <div className={`circle ${props.color}`} onClick={props.clickMe}>
+    <div className={`circle ${props.color}`}>
       <p>{props.id}</p>
     </div>
   );
