@@ -1,0 +1,36 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.gameover {
+  background-color: peachpuff;
+  padding: 1rem;
+  width: 140%;
+  min-height: 25%;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+
+button {
+  border-radius: 5px;
+  padding: 1.5rem;
+  background-image: radial-gradient(
+    rgba(228, 226, 226, 0.616),
+    rgb(185, 180, 180)
+  );
+  cursor: pointer;
+  margin: 2rem;
+  font-family: "Train One", cursive;
+}

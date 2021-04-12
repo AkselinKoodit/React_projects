@@ -27,3 +27,8 @@
 .blue {
   background-color: blue;
 }
+.active {
+  background-image: url("../assets/images/devil.png");
+  box-shadow: 0 0 20px red;
+  background-size: cover;
+}

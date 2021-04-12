@@ -3,9 +3,13 @@ import "./Circle.css";
 
 const Circle = (props) => {
   return (
-    <div className={`circle ${props.color}`}>
-      <p>{props.id}</p>
-    </div>
+    <div
+      className={`circle ${props.color} ${props.active ? " active" : ""}`}
+      //or you could do this:
+      // <div className="circle" style={{ backgroundColor: props.color } onClick={props.click}}>
+      onClick={props.click}
+      style={{ pointerEvents: props.disabled ? "auto" : "none" }}
+    ></div>
   );
 };
 
