@@ -1,37 +1,49 @@
 import React, { Component } from "react";
 import AnimalCard from "./AnimalCard";
 import "./animal.css";
+import SearchBox from "./SearchBox/SearchBox";
+
+import { animals } from "./animals";
 
 class AnimalsList extends Component {
   state = {
-    animals: [
-      { id: 3, name: "Fox", img: "https://source.unsplash.com/AjZjBEjQ5Cw/" },
-
-      {
-        id: 6,
-        name: "Rabbit",
-        img: "https://source.unsplash.com/hS41iEO300E/",
-      },
-
-      { id: 9, name: "Wolf", img: "https://source.unsplash.com/WFPWB7Vum1E/" },
-    ],
+    animals: animals,
+    searchInput: "",
   };
+
   clickHandler = (name) => {
     alert("Hi there! I'm " + name);
   };
+
+  searchValueHandler = (event) => {
+    console.log("input was used");
+    this.setState({
+      searchInput: event.target.value,
+    });
+    console.log(this.state.searchInput);
+  };
   render() {
-    const animals = this.state.animals.map((animal) => {
+    const animalFilter = this.state.animals.filter((animal) => {
+      return animal.name
+        .toLowerCase()
+        .includes(this.state.searchInput.toLowerCase());
+    });
+
+    const animalsList = animalFilter.map((animal) => {
       return (
         <AnimalCard
           name={animal.name}
-          img={animal.img}
-          key={animal.id}
-          clickMe={this.clickHandler.bind(this, animal.name)} //this both are correct. This uses anon func to send data.
-          clickMe={() => this.clickHandler(animal.name)} //<---this one binds the data.
+          clickMe={() => this.clickHandler(animal.name)} //this both are correct. This uses anon func to send data.
+          key={animal.name}
         />
       );
     });
-    return <div className="animallist">{animals}</div>;
+    return (
+      <div>
+        <SearchBox search={this.searchValueHandler} />
+        <div className="animallist">{animalsList}</div>;
+      </div>
+    );
   }
 }
 

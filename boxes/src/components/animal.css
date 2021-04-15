@@ -2,6 +2,8 @@
   background-color: lightgreen;
   box-shadow: 0 0 5px #333;
   padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
 }
 .animalcard img {
   width: 200px;
@@ -10,4 +12,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+}
+.button {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: burlywood;
 }
