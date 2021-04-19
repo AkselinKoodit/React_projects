@@ -51,7 +51,7 @@ const Main = () => {
         <Route path="/boxeslist" component={BoxesList} />
         <Route path="/animals" component={AnimalsList} />
       </Switch>
-      <h1>Hello!</h1>
+      <h2>Didin't find anything with that criteria</h2>
     </div>
   );
 };

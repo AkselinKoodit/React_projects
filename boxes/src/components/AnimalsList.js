@@ -33,7 +33,7 @@ class AnimalsList extends Component {
       return (
         <AnimalCard
           name={animal.name}
-          clickMe={() => this.clickHandler(animal.name)} //this both are correct. This uses anon func to send data.
+          clickMe={() => this.clickHandler(animal.name)}
           key={animal.name}
         />
       );
