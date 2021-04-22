@@ -1,0 +1,102 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "firstname": "Akseli",
+      "lastname": "Miettinen",
+      "phonenumber": "451234567",
+      "message": "Behold my kingdom!",
+      "role": "King"
+    },
+    {
+      "id": 2,
+      "firstname": "Cabos",
+      "lastname": "Calamazar",
+      "phonenumber": "12345687",
+      "message": "Yarr who wakes me from my slumber?!",
+      "role": "Butcher"
+    },
+    {
+      "id": 10,
+      "firstname": "test",
+      "lastname": "testing",
+      "phonenumber": "123123",
+      "message": "Beeb boob!",
+      "role": "Wizard"
+    },
+    {
+      "id": 3,
+      "firstname": "Seppo",
+      "lastname": "Seppänen",
+      "phonenumber": "123123",
+      "message": "I love smithing",
+      "role": "Smith"
+    },
+    {
+      "firstname": "sometihing",
+      "lastname": "somethingElse",
+      "phonenumber": "123456",
+      "message": "Helloo I'm Something",
+      "role": "jester",
+      "id": 11
+    },
+    {
+      "firstname": "Wicked",
+      "lastname": "Witch of the East",
+      "phonenumber": "51564564",
+      "message": "I'll turn you into a frog",
+      "role": "witch",
+      "id": 12
+    },
+    {
+      "firstname": "ewq",
+      "lastname": "ewqe",
+      "phonenumber": "43242",
+      "message": "sdadasdads MoOOORE ALE!",
+      "role": "drunkard",
+      "id": 13
+    },
+    {
+      "firstname": "More",
+      "lastname": "Potatoes",
+      "phonenumber": "123321",
+      "message": "I looove potatoes",
+      "role": "peasant",
+      "id": 14
+    }
+  ],
+  "SomethingElse": [
+    {
+      "id": 5,
+      "firstname": "Akseli",
+      "lastname": "Miettinen",
+      "phonenumber": "451234567",
+      "message": "Hello there!",
+      "role": "King"
+    },
+    {
+      "id": 6,
+      "firstname": "Cabos",
+      "lastname": "Calamazar",
+      "phonenumber": "12345687",
+      "message": "Yarr who wakes me from my slumber?!",
+      "role": "Butcher"
+    },
+    {
+      "id": 7,
+      "firstname": "test",
+      "lastname": "testing",
+      "phonenumber": "123123",
+      "message": "Beeb boob!",
+      "role": "Wizard"
+    },
+    {
+      "id": 8,
+      "firstname": "Seppo",
+      "lastname": "Seppänen",
+      "phonenumber": "123123",
+      "message": "I love smithing",
+      "role": "Smith"
+    }
+  ]
+}
